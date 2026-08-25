@@ -5,6 +5,8 @@
   --color-dark: #171717;
 
   --transition-default: 0.3s ease-in-out;
+
+  --box-shadow-default: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 html {

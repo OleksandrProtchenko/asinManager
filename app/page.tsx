@@ -5,11 +5,17 @@ import css from './page.module.css';
 export default function Home() {
   return (
     <div>
-      <header>
+      <header className={css.header}>
         <div className={`container ${css.headerContainer}`}>
-          <div className={css.logo}>
-            <Link href="/">
-              <Image src="/Logo.webp" alt="Logo" width={177} height={43} />
+          <div className={css.logoWrapper}>
+            <Link className={css.logo} href="/">
+              <Image
+                className={css.logoImage}
+                src="/Logo.webp"
+                alt="Logo"
+                width={177}
+                height={43}
+              />
             </Link>
           </div>
           <nav className={css.nav}>
