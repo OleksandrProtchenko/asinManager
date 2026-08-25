@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import css from './page.module.css';
 
 export default function Home() {
@@ -7,9 +8,9 @@ export default function Home() {
       <header>
         <div className={`container ${css.headerContainer}`}>
           <div className={css.logo}>
-            <p className={css.logoText}>
-              US P<span className={css.logoTextAccent}>o</span>wer Seller
-            </p>
+            <Link href="/">
+              <Image src="/Logo.webp" alt="Logo" width={177} height={43} />
+            </Link>
           </div>
           <nav className={css.nav}>
             <ul className={css.navList}>

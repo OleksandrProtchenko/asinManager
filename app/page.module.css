@@ -5,16 +5,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.logoText {
-  font-size: 32px;
-  line-height: 1.2;
-  letter-spacing: -0.05em;
-  font-weight: bold;
-}
-.logoTextAccent {
-  color: var(--color-green);
-  font-size: 34px;
-}
+
 .navList {
   display: flex;
   gap: 20px;
