@@ -1,0 +1,85 @@
+.headerContainer {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoText {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: bold;
+}
+.logoTextAccent {
+  color: var(--color-green);
+  font-size: 34px;
+}
+.navList {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+.navItem {
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  transition: color var(--transition-default);
+  font-weight: bold;
+}
+
+.navItem::before {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-green);
+  transition: width var(--transition-default);
+}
+
+.auth {
+  display: flex;
+  gap: 20px;
+}
+
+.authButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: all var(--transition-default);
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border: 2px solid transparent;
+}
+
+.loginButton {
+  background-color: transparent;
+  border: 2px solid var(--color-green);
+}
+
+@media (hover: hover) {
+  .navItem:hover {
+    color: var(--color-green);
+  }
+  .navItem:hover::before {
+    width: 100%;
+  }
+
+  .authButton:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-green);
+  }
+
+  .loginButton:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+}
