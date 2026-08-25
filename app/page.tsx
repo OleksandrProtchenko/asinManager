@@ -32,7 +32,9 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <h1>Welcome to US Power Seller</h1>
+        <div className={`container`}>
+          <h1>Welcome to US Power Seller</h1>
+        </div>
       </main>
     </div>
   );
