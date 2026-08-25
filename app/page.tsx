@@ -31,6 +31,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <main>
+        <h1>Welcome to US Power Seller</h1>
+      </main>
     </div>
   );
 }
