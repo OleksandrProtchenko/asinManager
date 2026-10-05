@@ -1,0 +1,52 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100dvw;
+  height: 100dvh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  z-index: 999;
+  position: relative;
+  max-width: 464px;
+  max-height: 90vh;
+  border-radius: 12px;
+  background: var(--color-modal-background);
+  padding: 32px;
+  border: 1px solid rgba(191, 201, 193, 0.3);
+}
+
+.closeButton {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  color: var(--color-subdescr);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: color var(--transition-default);
+}
+
+@media (hover: hover) {
+  .closeButton:hover {
+    color: var(--color-green);
+  }
+}
+
+.closeIcon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
